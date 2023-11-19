@@ -11,7 +11,6 @@ using Unity.Services.Relay;
 using Unity.Networking.Transport.Relay;
 using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
-using Unity.VisualScripting;
 
 public class LobbyManager : NetworkBehaviour
 {
@@ -204,6 +203,7 @@ public class LobbyManager : NetworkBehaviour
     {
         Player player = new Player
         {
+            
             Data = new Dictionary<string, PlayerDataObject>
                     {
                         { "name", new PlayerDataObject(PlayerDataObject.VisibilityOptions.Public, playerNameInput) }
